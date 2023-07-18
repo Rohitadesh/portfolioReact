@@ -1,0 +1,9 @@
+*{
+    padding:0;
+    margin:0;
+}
+.myimage{
+    background-image: url('/public/images/port.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
