@@ -20,9 +20,9 @@ const About =()=>{
                     
                     <div className="h-[55%] w-full flex flex-col flex-wrap justify-center items-center ">
                         <p style={{fontSize:'0.7 rem'}} > 
-                            " Hi i am Adesh S.N Welcome to My Website i am <strong>Software Development </strong> with foundation in HTML,CSS and JavaScript. Additionaly i have learnt MYSQL, Express JS.
+                            "Hi i am Adesh S. N Welcome to My Website i am <strong> Software Development</strong> with foundation in HTML,CSS and JavaScript  .  Additionaly i  have learnt  MYSQL, Express JS .
                             I continuously seek opportunities to expand my skill set and apply my knowledge to achieve personal growth and contribute to organizational goals. 
-                            Let's collaborate and create remarkable web experiences together !"
+                            Work experiences in Smart MedTech. Let's collaborate and create remarkable web experiences together !"
                         </p>
                          
                     </div>

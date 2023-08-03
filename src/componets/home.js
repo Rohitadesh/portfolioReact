@@ -10,7 +10,10 @@ const Home=()=>{
         
             <div className='border border-solid border-rose-500 h-[70%] w-[40%] flex flex-col
             flex-wrap justify-end rounded-xl'>
-
+            <div className="h-[90%] w-full border border-solid border-black flex flex-col justify-center align-center">
+                <h1>I AM ADESHKUMAR S N SOFTWARE DEVELOPER</h1>
+            </div>
+                
             <div className='border border-solid border-black h-[10%] w-full flex 
             flex-col flex-wrap justify-center items-center   '>
                 <button className=' w-[20%] bg-slate-300 rounded-xl '>CV</button>
