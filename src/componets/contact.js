@@ -4,7 +4,7 @@ import {FaMobileAlt} from "@react-icons/all-files/fa/FaMobileAlt";
 // import '@/images/contact.jpg'
 const Contact= () =>{
     return(
-       <div className=" h-[92.8%] flex flex-row gap-2  flex-wrap justify-center items-center  ">
+       <div className=" h-[92.8%] flex flex-col gap-2  flex-wrap justify-center items-center  ">
             {/* <div className="border border-solid border-black  h-[5%]"></div> */}
             <div className="shadow-xl  bg-gray-200  rounded-xl  border-pink-500 h-[75%] w-[40%] flex flex-wrap flex-col justify-center gap-12 items-center ">
                
@@ -30,18 +30,7 @@ const Contact= () =>{
             
             </div>
             
-            <div className=" shadow-2xl bg-gray-300 opacity-50 rounded-xl  h-[75%] w-[40%] flex flex-wrap flex-col justify-center gap-4 items-center ">
-            
-                <input className="h-[9%] w-[60%] mt-8  rounded-md border border-solid border-black opacity-100" placeholder="  Name"/>
-                
-                <input className="h-[9%] w-[60%]  rounded-md border border-solid border-black opacity-100" placeholder="   Mail"/>
-                
-                <input className="h-[25%]  opacity-100  w-[60%]  rounded-md border border-solid border-black  mt-1 " placeholder=" Message"/>
-            
-                <button class="opacity-200 hover:bg-rose-600 text-white font-bold py-2 px-4 rounded-full">
-                    Submit
-                </button>
-            </div>
+           
        
        </div>
     )

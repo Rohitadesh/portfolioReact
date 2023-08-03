@@ -3,15 +3,15 @@ import joke from "../componets/joke.png"
 import client from "../componets/bio.png"
 const Work =() =>{
     return (
-        <main className='border border-solid border-blue-500 h-[93%] w-full overflow-auto '>
+        <main className=' h-[93%] w-full overflow-auto '>
             <div className="h-[60%] w-full  flex flex-row  gap-2 mb-2">
                 <div className="h-full w-[50%] border border-solid border-rose-300 rounded-xl">
 
-                    <img src={game} width={600} height={110} alt="game" className="rounded-xl" />
+                    <img src={game} width={600}  alt="game"  className="h-full rounded-xl object-fit" />
                 </div>
                 <div className="h-full w-[50%] border border-solid border-black rounded-xl">
                 <p className="text-md text-gray-500 text-left p-10 font-medium">
-                    <p className="text-2xl text-center   font-semibold">game</p>
+                    <p className="text-2xl text-center   font-semibold">Game</p>
                     This Is Rockpapercutter website used to obtain large amounts of 
                     data from websites.the game is between user and computer.     
                     This Project is Done By using HTML, css and JavaScript</p>
@@ -20,20 +20,18 @@ const Work =() =>{
             </div>
             <div className="h-[60%] w-full flex flex-row gap-2 mb-2">
                 <div className="h-full w-[50%] border border-solid border-rose-300 rounded-xl">
-                    <img src={joke} width={600} height={100} alt="game" className="rounded-xl"  />
+                    <img src={joke} width={600} height={110} alt="game" className="h-full rounded-xl"  />
                 </div>
                 <div className="h-full w-[50%] border border-solid border-black rounded-xl">
                 <p className="text-md text-gray-500 text-left p-10 font-medium">
                     <p className="text-2xl text-center   font-semibold">JokeAPI</p>
-                    This Is Joke website used to obtain large amounts of 
-                    data from websites. Most of this data is unstructured data in an HTML 
-                    format.the game is between user and computer.     
+                    This Is Joke website generating random joke    
                     This Project is Done By using HTML, css and JavaScript</p>
                 </div>  
             </div>
             <div className="h-[60%] w-full flex flex-row gap-2 mb-2">
                 <div className="h-full w-[50%] border border-solid border-rose-300 rounded-xl">
-                    <img src={client} width={600} height={110} alt="game" className="rounded-xl" />
+                    <img src={client} width={600} height={110} alt="game" className="h-full rounded-xl" />
                 </div>
                 <div className="h-full w-[50%] border border-solid border-black rounded-xl overflow-hidden">
                 <p className="text-md text-gray-500 text-left p-10 font-medium">
