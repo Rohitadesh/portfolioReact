@@ -5,11 +5,11 @@ const Work =() =>{
     return (
         <main className=' h-[93%] w-full overflow-auto '>
             <div className="h-[60%] w-full  flex flex-row  gap-2 mb-2">
-                <div className="h-full w-[50%] border border-solid border-rose-300 rounded-xl">
+                <div className="h-full w-[50%] border border-solid border-black rounded-xl shadow-xl">
 
                     <img src={game} width={600}  alt="game"  className="h-full rounded-xl object-fit" />
                 </div>
-                <div className="h-full w-[50%] border border-solid border-black rounded-xl">
+                <div className="h-full w-[50%] border border-solid border-black rounded-xl shadow-xl">
                 <p className="text-md text-gray-500 text-left p-10 font-medium">
                     <p className="text-2xl text-center   font-semibold">Game</p>
                     This Is Rockpapercutter website used to obtain large amounts of 
@@ -19,7 +19,7 @@ const Work =() =>{
                 </div>
             </div>
             <div className="h-[60%] w-full flex flex-row gap-2 mb-2">
-                <div className="h-full w-[50%] border border-solid border-rose-300 rounded-xl">
+                <div className="h-full w-[50%] border border-solid border-black rounded-xl shadow-xl">
                     <img src={joke} width={600} height={110} alt="game" className="h-full rounded-xl"  />
                 </div>
                 <div className="h-full w-[50%] border border-solid border-black rounded-xl">
@@ -30,7 +30,7 @@ const Work =() =>{
                 </div>  
             </div>
             <div className="h-[60%] w-full flex flex-row gap-2 mb-2">
-                <div className="h-full w-[50%] border border-solid border-rose-300 rounded-xl">
+                <div className="h-full w-[50%] border border-solid border-black rounded-xl shadow-xl">
                     <img src={client} width={600} height={110} alt="game" className="h-full rounded-xl" />
                 </div>
                 <div className="h-full w-[50%] border border-solid border-black rounded-xl overflow-hidden">

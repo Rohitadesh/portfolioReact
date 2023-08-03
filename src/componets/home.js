@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
+import {useEffect}from 'react';
 import name from "../componets/name.png"
+import AOS from 'aos'
 const Home=()=>{
+    useEffect(() => {
+    
+        AOS.init({
+          duration : 3000
+        });    
+        AOS.refresh();
+      }, [])
     return(
         <main className=' h-[93%] w-full 
       
@@ -21,8 +30,7 @@ const Home=()=>{
             </div>
                 
             <div className=' h-[10%] w-full flex 
-            flex-col flex-wrap justify-center items-center   '>
-                <button className=' w-[20%] rounded-xl '>CV</button>
+            flex-col flex-wrap justify-center items-center '>
                 <Link to="https://github.com/Rohitadesh">Github</Link>
                 {/* <button className='bg-slate-300 rounded-xl w-[20%]' onClick={}>Github</button> */}
             </div>
