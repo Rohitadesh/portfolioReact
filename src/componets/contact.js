@@ -6,7 +6,7 @@ const Contact= () =>{
     return(
        <div className=" h-[92.8%] flex flex-col gap-2  flex-wrap justify-center items-center  ">
             {/* <div className="border border-solid border-black  h-[5%]"></div> */}
-            <div className="shadow-xl  bg-gray-200  rounded-xl  border-pink-500 h-[75%] w-[40%] flex flex-wrap flex-col justify-center gap-12 items-center ">
+            <div className="shadow-xl    rounded-xl  border-pink-500 h-[75%] w-[40%] flex flex-wrap flex-col justify-center gap-12 items-center ">
                
                 <div className="h-[10%] w-[63%] gap-1 flex flex-col flex-wrap justify-center items-center content-start -mt-6 rounded-md border border-solid border-black  ">
                     <span > <FaMobileAlt className="ml-1" /></span>+91-7259926393
@@ -24,7 +24,7 @@ const Contact= () =>{
             
             </div>
             
-            <div className=" shadow-xl bg-gray-300 opacity-50 flex flex-col flex-wrap justify-center items-center rounded-xl w-[12%] h-[10%]">
+            <div className=" shadow-xl border border-black opacity-50 flex flex-col flex-wrap justify-center items-center rounded-xl w-[12%] h-[10%]">
             
                 <h1>Contact</h1>
             
