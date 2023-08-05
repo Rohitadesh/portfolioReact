@@ -1,6 +1,7 @@
 import game from "../componets/game.png"
 import joke from "../componets/joke.png"
 import client from "../componets/bio.png"
+import weather from "../componets/weather.png"
 import {motion} from "framer-motion"
 const Work =() =>{
     // const scroll=useScroll()
@@ -38,6 +39,24 @@ const Work =() =>{
                     </p>
                 </motion.div>  
             </div>
+
+            <div className="h-[60%] w-full flex flex-row gap-8 mb-2">
+                <motion.div className="h-full w-[48%] border border-solid border-black rounded-xl shadow-xl ml-2"
+                whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                    <img src={weather} width={600} height={110} alt="game" className="h-full w-full rounded-xl" />
+                </motion.div>
+                
+                <motion.div className="h-full w-[46%] border border-solid border-black rounded-xl overflow-scroll"
+                whileHover={{ scale: 1.1}} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
+                <p className="text-md text-gray-500 text-left p-10 font-medium">
+                    <p className="text-2xl text-center font-semibold">ReactWeather</p>
+                    This Is ReactWeather website generating weather infromation currentcity and temperature    
+                        This Project is Done By using React and OpenweatherApi
+                    </p>
+
+                </motion.div>  
+            </div>
+
             <div className="h-[60%] w-full flex flex-row gap-8 mb-2">
                 <motion.div className="h-full w-[48%] border border-solid border-black rounded-xl shadow-xl ml-2"
                 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
@@ -59,7 +78,8 @@ const Work =() =>{
 
                 </motion.div>  
             </div>
+          
 
         </main>)
 }
-export default Work;
+export default Work;h
