@@ -1,16 +1,11 @@
 import { Link } from "react-router-dom";
-import {useEffect}from 'react';
+// import {useEffect}from 'react';
 import name from "../componets/name.png"
 import {motion}  from "framer-motion"
-import AOS from 'aos'
+// import AOS from 'aos'
 const Home=()=>{
-    useEffect(() => {
-    
-        AOS.init({
-          duration : 3000
-        });    
-        AOS.refresh();
-      }, [])
+  
+
     return(
         <main className=' h-[93%] w-full 
       
@@ -37,8 +32,8 @@ const Home=()=>{
       </motion.div>
             
         
-            <div className='border  h-[70%] w-[40%] flex flex-col
-            flex-wrap justify-end rounded-xl'>
+            <div className='border  h-[70%] w-[40%] flex flex-col 
+            flex-wrap justify-end rounded-full'>
             <div className="h-[90%] w-full rounded-2xl shadow-xl flex flex-col justify-center align-center">
                 
                 <h1 className="text-md text-gray-500 text-left p-14 font-medium text-2xl"><strong >
