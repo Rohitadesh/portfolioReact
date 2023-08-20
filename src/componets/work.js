@@ -13,7 +13,7 @@ const Work =() =>{
                 <motion.div className="h-full w-[48%]  rounded-xl shadow-xl ml-2"
                 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
 
-                    <img src={game} width={600}  alt="game"  className="h-full w-full rounded-xl object-fit" />
+                    <img src={game} width={600}  alt="game"  className="h-full w-full rounded-xl object-fit" loading="lazy" />
                 </motion.div>
                 
                 <motion.div className="h-full w-[46%]  rounded-xl shadow-xl"
@@ -29,7 +29,7 @@ const Work =() =>{
             <div className="h-[60%] w-full flex flex-row gap-8 mb-2">
                 <motion.div className="h-full w-[48%]  rounded-xl shadow-xl ml-2"
                 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
-                    <img src={joke} width={600} height={110} alt="game" className="h-full w-full rounded-xl"  />
+                    <img src={joke} width={600} height={110} alt="game" className="h-full w-full rounded-xl" loading="lazy" />
                 </motion.div>
                 
                 <motion.div className="h-full w-[46%]  rounded-xl shadow-xl "
@@ -45,7 +45,7 @@ const Work =() =>{
             <div className="h-[60%] w-full flex flex-row gap-8 mb-2">
                 <motion.div className="h-full w-[48%]  rounded-xl shadow-xl ml-2"
                 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                    <img src={weather} width={600} height={110} alt="game" className="h-full w-full rounded-xl" />
+                    <img src={weather} width={600} height={110} alt="game" className="h-full w-full rounded-xl" loading="lazy" />
                 </motion.div>
                 
                 <motion.div className="h-full w-[46%] rounded-xl shadow-xl "
@@ -62,7 +62,7 @@ const Work =() =>{
             <div className="h-[60%] w-full flex flex-row gap-8 mb-2">
                 <motion.div className="h-full w-[48%]  rounded-xl shadow-xl ml-2"
                 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                    <img src={client} width={600} height={110} alt="game" className="h-full w-full rounded-xl" />
+                    <img src={client} width={600} height={110} alt="game" className="h-full w-full rounded-xl" loading="lazy" />
                 </motion.div>
                 
                 <motion.div className="h-full w-[46%] rounded-xl overflow-scroll shadow-xl "
