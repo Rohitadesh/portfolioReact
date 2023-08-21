@@ -4,7 +4,7 @@ import Navbar from "./navbar"
 
 const Layout =()=>{
     return(
-        <div className="myimage h-screen w-screen  ">
+        <div className="myimage h-screen w-screen" style={{loading:"lazy"}}>
             <Navbar />
             <Outlet />  
         </div>

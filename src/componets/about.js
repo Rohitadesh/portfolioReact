@@ -1,5 +1,15 @@
 import {web,tools,frame} from "./webtech"
+import { useEffect } from "react";
+import AOS from "aos";
 const About =()=>{
+    useEffect(()=>{
+
+        console.log(AOS);
+        AOS.init({
+            duration:3000
+        });
+        AOS.refresh();
+    },[])
     return(
         <div className="h-[93%] w-full  overflow-y-auto flex flex-row flex-wrap 
             justify-center items-center gap-4 ">

@@ -2,10 +2,17 @@ import { Link } from "react-router-dom";
 // import {useEffect}from 'react';
 import name from "../componets/name.png"
 import {motion}  from "framer-motion"
-// import AOS from 'aos'
+import { useEffect } from "react";
+import AOS from 'aos'
 const Home=()=>{
-  
+  useEffect(()=>{
 
+    console.log(AOS);
+    AOS.init({
+        duration:3000
+    });
+    AOS.refresh();
+},[])
     return(
         <main className=' h-[93%] w-full 
       
