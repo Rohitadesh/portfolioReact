@@ -34,7 +34,7 @@ const About =()=>{
                 <div className=" ml-12 h-full w-[43%] flex flex-wrap shadow-gray-500 flex-col justify-center items-center shadow-2xl rounded-3xl">
 
                         <p  className="p-6 text-base italic"> 
-                            "Hi i am Adesh S. N Welcome to My Website i am <strong> Software Development</strong> with foundation in HTML,CSS and JavaScript. Additionaly i  have learnt  MYSQL, Express JS .
+                            "Hi i am Adesh S. N Welcome to My Website i am a <strong> Software Developer</strong> with foundation in HTML,CSS and JavaScript. Additionaly i  have learnt  MYSQL, Express JS .
                             I continuously seek opportunities to expand my skill set and apply my knowledge to achieve personal growth and contribute to organizational goals. Work experiences in Smart MedTech. 
                             Let's collaborate and create remarkable web experiences together !"
                         </p>
@@ -124,7 +124,7 @@ const About =()=>{
                 <div className="h-full w-[25%]  flex flex-wrap flex-col justify-center items-center gap-12">
 
                     <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
-                        <h1 className="text-sm italic">EXPERIENCES</h1>
+                        <h1 className="text-sm italic">EXPERIENCE</h1>
                     </div>
 
                     <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
