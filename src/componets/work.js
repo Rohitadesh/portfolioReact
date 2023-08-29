@@ -17,10 +17,10 @@ const Work =() =>{
                 </motion.div>
             </div>
             <div className='h-full w-full  flex flex-wrap flex-col justify-center items-center'>
-                <motion.div className="h-[90%] w-[80%]  rounded-xl shadow-2xl "
+                <motion.div className="h-[90%] w-[80%] max-[620px]:h-[90%] max-[620px]:w-[90%] rounded-xl shadow-2xl "
                     whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
-                    <p className="text-md text-gray-500 text-left p-10 font-medium">
-                        <p className="text-2xl text-center   font-semibold">Game</p>
+                        <p className="text-2xl text-center  max-[620px]:text-xs  font-semibold">Game</p>
+                    <p className="text-md text-gray-500 text-left p-10 font-medium max-[620px]:text-xs max-[620px]:-mt-3">
                         This Is Rockpapercutter website used to obtain large amounts of 
                         data from websites.the game is between user and computer.     
                         This Project is Done By using HTML, css and JavaScript</p>
@@ -37,7 +37,7 @@ const Work =() =>{
                 <motion.div className="h-[90%] w-[80%]  rounded-xl shadow-2xl  "
                     whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                         <p className="text-md text-gray-500 text-left p-10 font-medium">
-                            <p className="text-2xl text-center   font-semibold">JokeAPI</p>
+                            <p className="text-2xl text-center  max-[620px]:text-sm  font-semibold">JokeAPI</p>
                             This Is Joke website generating random joke    
                             This Project is Done By using HTML, css and JavaScript
                         </p>
@@ -52,8 +52,8 @@ const Work =() =>{
             <div className='h-full w-full  flex flex-wrap flex-col justify-center items-center'>
                 <motion.div className="h-[90%] w-[80%] rounded-xl shadow-2xl "
                     whileHover={{ scale: 1.1}} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
-                    <p className="text-md text-gray-500 text-left p-10 font-medium">
-                        <p className="text-2xl text-center font-semibold">ReactWeather</p>
+                    <p className="text-md text-gray-500 text-left max-[620px]:text-sm p-10 font-medium">
+                        <p className="text-2xl text-center max-[620px]:text-sm font-semibold">ReactWeather</p>
                         This Is ReactWeather website generating weather infromation currentcity and temperature    
                             This Project is Done By using React and OpenweatherApi
                         </p>
@@ -70,8 +70,8 @@ const Work =() =>{
             <div className='h-full w-full border  flex flex-wrap flex-col justify-center items-center'>
                 <motion.div className="h-[90%] w-[80%] rounded-xl overflow-scroll shadow-2xl "
                     whileHover={{ scale: 1.1}} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
-                    <p className="text-md text-gray-500 text-left p-10 font-medium">
-                        <p className="text-2xl text-center   font-semibold">My Bio Backup</p>
+                    <p className="text-md text-gray-500 text-left p-10 font-medium max-[620px]:text-sm">
+                        <p className="text-2xl text-center  max-[620px]:text-sm font-semibold">My Bio Backup</p>
                         This is our client product .This is Application Available in Play Store Also.
                         This Product Provides A Secured Account In Cloud To Everyone To Access Medical 
                         Documents Such As MRI ReportCT Scan, X Ray, Lab Reports, Other Medical Tests, 

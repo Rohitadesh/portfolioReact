@@ -1,4 +1,4 @@
-import {web,tools,frame} from "./webtech"
+import {web,tools,frame,skill_set} from "./webtech"
 import { useEffect } from "react";
 import AOS from "aos";
 const About =()=>{
@@ -11,162 +11,144 @@ const About =()=>{
         AOS.refresh();
     },[])
     return(
-        <div className="h-[93%] w-full  overflow-y-auto flex flex-row flex-wrap 
-            justify-center items-center gap-4 ">
-            
-            <div className="mt-8 h-[70%] w-[90%] border-solid
-                flex flex-wrap">
-
-
-                {/* about rounded */}
-                <div className=" h-full w-[30%] flex flex-wrap flex-col justify-center items-center ">
-
-                    <div className=" h-36 w-36 rounded-full shadow-2xl shadow-gray-500 
-                         flex flex-col items-center justify-center">
-                        <h1 className="text-sm italic">AboutMe</h1>
-                    </div>
+        <div className="h-[93%] w-full  overflow-auto  
+        grid boxes ">
+           <div className="h-full w-full  flex flex-wrap flex-row items-center justify-center gap-20  boxes ">
+                <div className=" h-32 w-32 rounded-full shadow-2xl shadow-gray-500 
+                         flex flex-col items-center justify-center  max-[630px]:h-32  max-[630px]:w-32">
+                        <h1 className="text-sm italic text-black">AboutMe</h1>
                 </div>
 
-                {/* arrow */}
-     
-
-                {/* content */}
-                <div className=" ml-12 h-full w-[43%] flex flex-wrap shadow-gray-500 flex-col justify-center items-center shadow-2xl rounded-3xl">
-
-                        <p  className="p-6 text-base italic"> 
-                            "Hi i am Adesh S. N Welcome to My Website i am a <strong> Software Developer</strong> with foundation in HTML,CSS and JavaScript. Additionaly i  have learnt  MYSQL, Express JS .
+                <div className="  h-[70%] w-[42%]  flex flex-wrap shadow-gray-500 flex-col justify-center items-center shadow-2xl rounded-3xl  
+                max-[630px]:h-[70%]  max-[630px]:w-[50%]  ">
+                        <p  className="p-6 text-base italic  max-[630px]:text-xs text-black"> 
+                            "Hi i am Adesh S. N Welcome to My Website i am a <strong> Software Developer</strong> with foundation in HTML, CSS and JavaScript. Additionaly i  have learnt  MYSQL, Express JS .
                             I continuously seek opportunities to expand my skill set and apply my knowledge to achieve personal growth and contribute to organizational goals. Work experiences in Smart MedTech. 
                             Let's collaborate and create remarkable web experiences together !"
                         </p>
             
                 </div>
 
-                </div>
+           </div>
+           <div className="h-full  w-full grid skills">
 
-            {/* technology */}
-
-            <div className="h-[90%] w-[90%] flex flex-wrap mt-6">
-               
-               
-                <div className="h-full w-[28%]  flex flex-wrap flex-col justify-center items-center">
+                <div className="h- w-full  flex flex-wrap flex-col justify-center items-center
+                    max-[600px]:">
 
                     <div className="h-36 w-36  rounded-full shadow-gray-500
                     flex flex-wrap flex-col justify-center items-center shadow-2xl">
-                        <h1 className="text-sm italic">MySkills</h1>
+                        <h1 className="text-sm italic text-black">MySkills</h1>
                     </div>
 
                 </div>
-                <div className="h-full w-[28%]  flex flex-wrap flex-row justify-center gap-8 items-center">
 
-                    <div className="h-28 w-28  rounded-full shadow-gray-500
-                        flex flex-wrap flex-col  justify-center items-center shadow-2xl">
-                            <h3 className="p-4 text-sm italic">Web Technology</h3>
-                    </div>
 
-                    <div className="h-28 w-28  rounded-full shadow-gray-500
-                        flex flex-wrap flex-col justify-center items-center shadow-2xl">
-                            <h1 className="p-2 text-sm italic">FrameWorks</h1>
-                            {/* <h1>/]</h1> */}
-                            <h1>Libries</h1>
-                    </div>
+                <div className="h-full w-full 
+                flex flex-wrap flex-col justify-center items-center gap-28 max-[640px]:flex max-[640px]:gap-36  max-[640px]:h-[93%]">
+                    {
+                        skill_set.map((element,index)=>{
 
-                    <div className="h-28 w-28  rounded-full 
-                        flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
-                            <h1>Tools</h1>
-                    </div>
+                            return(
+                                <div key={index} className="h-28 w-28  rounded-full shadow-gray-500  
+                            flex flex-wrap flex-col  justify-center items-center shadow-2xl ">
+                                <h3 className="p-4 text-sm italic text-black">{element}</h3>
+                            </div> ) 
+                        })
+                    }
+
                 </div>
-                <div className="h-full w-[44%]  flex flex-wrap flex-row justify-center gap-8 items-center">
 
-                    <div className="h-[30%] w-full  flex flex-wrap flex-row justify-center gap-6 items-center ">
-                        {
+
+                <div className="h-full w-full  flex flex-wrap flex-col justify-center items-center">
+
+                    <div className="h-[33%] w-full flex flex-wrap flex-row gap-4 justify-center items-center ">
+                    {
                             web.map((web_element)=>{
 
                                 return(
-                                    <div className="h-20 w-20 rounded-full shadow-gray-500
+                                    <div className="h-20 w-20 rounded-full  shadow-gray-500 
                                          shadow-2xl flex flex-wrap flex-col justify-center items-center ">
-                                        <h2 className="text-sm italic">{web_element}</h2>
+                                        <h2 className="text-sm italic text-black">{web_element}</h2>
                                     </div>
                                 )
                             })
                         }
                     </div>
-
-                    <div className="h-[30%] w-full  flex flex-wrap flex-row justify-center gap-6 items-center ">
+                    <div className="h-[34%] w-full    flex flex-wrap flex-col justify-center items-center gap-10">
                         {
                             frame.map((element_lib)=>{
                                 return(
-                                    <div className="h-20 w-20  rounded-full shadow-gray-500
+                                    <div className="h-20 w-20  rounded-full shadow-gray-500 
                                         shadow-2xl flex flex-wrap flex-row justify-center items-center">
-                                        <h2 className="text-sm italic">{element_lib}</h2>
+                                        <h2 className="text-sm italic text-black">{element_lib}</h2>
                                     </div>
                                 )
                             })
                         }
                     </div>
+                    <div className="h-[33%] w-full   flex flex-wrap flex-row gap-4 max-[640px]:flex max-[640px]:flex-row max-[640px]:gap-8 justify-center items-center
+                     max-[640px]:h-[19%]">
 
-                    <div className="h-[24%] w-full  flex flex-wrap flex-col justify-center items-center">
                         {
-                            tools.map((element_tools)=>{
+                            tools.map((element_tools,index1)=>{
                                 return(
-                                    <div className="h-20 w-20  rounded-full  shadow-xl shadow-gray-500
+                                    <div key={index1} className="h-20 w-20  rounded-full  shadow-xl shadow-gray-500 max-[640px]:mb-
                                        shadow-2xl flex flex-wrap flex-row justify-center items-center">
-                                        <h2 className="text-sm italic">{element_tools}</h2>
+                                        <h2 className="text-sm italic text-black">{element_tools}</h2>
                                     </div>
                                 )
                             })
                         }
+
                     </div>
 
-                </div>
-            </div>
-            <div className="h-[75%] w-[90%]  flex flex-wrap">
-
-                <div className="h-full w-[25%]  flex flex-wrap flex-col justify-center items-center gap-12">
-
-                    <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
-                        <h1 className="text-sm italic">EXPERIENCE</h1>
-                    </div>
-
-                    <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
-
-                        <h1 className="text-sm italic">EDUCATION</h1>
-                    </div>
 
 
                 </div>
 
-                <div className="h-full w-[27%]  flex flex-wrap flex-col justify-center items-center gap-12">
 
-                    <div className="h-28 w-28 b rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
-                        <h1 className="text-sm italic">2022-present</h1>
-                    </div>
-
-                    <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
-                        <h1 className="text-sm italic">COLLEGE</h1>
-                    </div>
-                </div>
+           </div>
+           <div className="h-[120%] w-full  grid skills">
                 
-                <div className="h-full gap-12 w-[48%]  flex flex-wrap flex-col justify-center items-center">
+            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-8">
+                    <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl ">
+                        <h1 className="text-sm italic text-black ">EXPERIENCE</h1>
+                    </div>
 
-                        <div className="h-[30%] w-full flex flex-wrap flex-row justify-center items-center">
+                    <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl mt   -12 ">
 
-                            <div className="h-24 w-36 rounded-2xl shadow-2xl flex flex-wrap flex-col justify-center items-center shadow-gray-500 "  >
-                                <h1 className="text-sm italic p-1">Front-End Developer at SamarthMeditech Pvt Ltd</h1>
-                            </div>
+                        <h1 className="text-sm italic text-black">EDUCATION</h1>
+                    </div>
+            </div>
+            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-8">
+                    <div className="h-28 w-28 b rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
+                        <h1 className="text-sm italic text-black">2022-present</h1>
+                    </div>
 
-                        </div>
+                    <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
+                        <h1 className="text-sm italic text-black">COLLEGE</h1>
+                    </div>
+            </div>
+            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-10">
 
-                        <div className="h-[30%] w-full  flex flex-wrap flex-col justify-center items-center">
-                            <div className="h-24 w-36 rounded-2xl shadow-2xl  flex flex-wrap flex-col justify-center items-center shadow-gray-500">
-                                <h1 className="text-sm italic p-4">KLE INSTITUE OF TECHNOLOGY</h1>
-                            </div>
+                    <div className="h-24 w-36 rounded-2xl shadow-2xl flex flex-wrap flex-col justify-center items-center shadow-gray-500 "  >
+                        <h1 className="text-sm italic p-1 text-black">Front-End Developer at SamarthMeditech Pvt Ltd</h1>
+                    </div>
 
-                        </div>
+                    <div className="h-24 w-36 rounded-2xl shadow-2xl  flex flex-wrap flex-col justify-center items-center shadow-gray-500">
+                        <h1 className="text-sm italic p-4 text-black">KLE INSTITUE OF TECHNOLOGY Hubli</h1>
+                    </div>
 
-                </div>
+
+
+
 
             </div>
+            
 
+
+           </div>
+        
 
         </div>
     )

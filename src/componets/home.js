@@ -14,13 +14,14 @@ const Home=()=>{
     AOS.refresh();
 },[])
     return(
-        <main className=' h-[93%] w-full 
+        <main className=' h-[93%] w-full max-[640px]:h-[93%]
+        max-[640px]:flex max-[640px]:flex-col max-[640px]:flex-wrap max-[640px]:justify-center max-[640px]:items-center
       
       flex flex-col justify-center gap-10 items-center flex-wrap overflow-hidden'>
       
            
             <motion.div
-      className="h-[50%] w-[40% "
+      className="h-[50%] w-[40% max-[640px]:h-[30%]"
       animate={{
         scale: [1, 2, 2,1],
         rotate: [0, 0, 180, 180, 0],
@@ -39,13 +40,13 @@ const Home=()=>{
       </motion.div>
             
         
-            <div className='border  h-[70%] w-[40%] flex flex-col 
+            <div className='border  h-[70%] w-[40%] flex flex-col max-[640px]:h-[40%] max-[640px]:w-[80%]
             flex-wrap justify-end rounded-full'>
-            <div className="h-[90%] w-full rounded-2xl shadow-xl flex flex-col justify-center align-center">
+            <div className="h-[90%] w-full rounded-2xl shadow-xl flex flex-col justify-center align-cent">
                 
-                <h1 className="text-md text-gray-500 text-left p-14 font-medium text-2xl"><strong >
+                <h1 className="text-md text-gray-500 text-left p-14 font-medium text-2xl max-[640px]:text-sm"><strong >
                     I AM ADESHKUMAR S N 
-                    <h1><strong>SOFTWARE DEVELOPER</strong></h1>
+                    <h1 ><strong>SOFTWARE DEVELOPER</strong></h1>
                     </strong> </h1>
             </div>
                 
