@@ -22,7 +22,7 @@
 }
 @media (max-width:640px) {
     .boxes{
-        grid-template-rows: 600px 900px 400px;
+        grid-template-rows: 600px 900px 600px;
     }
     
 }
