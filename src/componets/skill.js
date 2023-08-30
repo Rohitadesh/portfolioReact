@@ -19,7 +19,7 @@ const Skills =() =>{
 
 
             <div className=" flex flex-wrap flex-col justify-center items-center gap-24  h-full w-full 
-            border-solid max-[640px]:h-[24%]  max-[640px]:border border-green-800 border-solid
+            border-solid max-[640px]:h-[24%]  
             max-[640px]:flex max-[640px]:flex-row max-[640px]:flex-wrap max-[640px]:gap-10">
                 {
                     skill_set.map((element,index)=>{
