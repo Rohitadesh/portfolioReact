@@ -2,10 +2,10 @@ import {web,tools,frame,skill_set} from "./webtech"
 const Skills =() =>{
     return(
         <div className="h-full  w-full grid skills flex flex-wrap flex-row  
-        max-[640px]:border border-violet-500 max-[640px]:flex max-[640px]:flex-wrap max-[640px]: flex-row " >
+         max-[640px]:flex max-[640px]:flex-wrap max-[640px]: flex-row " >
 
             <div className="h-full w-full  flex flex-wrap flex-col items-center justify-center
-            max-[640px]:border border-rose-300 border-solid 
+            
             max-[640px]:h-[22%]  max-[640px]:static  max-[640px]:mr-60 ">
 
                     <div className="h-36 w-36  rounded-full shadow-gray-500
@@ -18,7 +18,7 @@ const Skills =() =>{
 
 
             <div className=" flex flex-wrap flex-col -center items-center gap-28  h-full w-full  
-            border-solid h-[20%] max-[640px]:h-[24%]   max-[640px]:border  max-[640px]:border-blue-300 border-solid
+            border-solid h-[20%] max-[640px]:h-[24%] 
             max-[640px]:flex max-[640px]:flex-row max-[640px]:flex-wrap max-[640px]:gap-10">
                 {
                     skill_set.map((element,index)=>{
@@ -39,10 +39,10 @@ const Skills =() =>{
 
             <div className="h-full w-full  flex flex-wrap flex-col justify-center items-center  
             max-[640px]:flex max-[640px]:flex-row max-[640px]:flex-wrap max-[640px]:justify-start 
-            max-[640px]:border-black border max-[640px]:h-[54%]  max-[640px]:w-[100%]">
+             max-[640px]:h-[54%]  max-[640px]:w-[100%]">
 
                 <div className="h-[33%]  w-full flex flex-wrap flex-row gap-4 justify-center items-center
-                max-[640px]:border border-green-700 border-solid max-[640px]:w-[22%]  max-[640px]:h-[100%]">
+                 max-[640px]:w-[22%] h-[100%]">
                 {
                         web.map((web_element)=>{
 
@@ -56,7 +56,7 @@ const Skills =() =>{
                     }
                 </div>
                 <div className="h-[34%] w-full    flex flex-wrap flex-col justify-center items-center gap-10 
-                max-[640px]:border border-green-700 border-solid max-[640px]:w-[22%]  max-[640px]:h-[100%]">
+                 max-[640px]:w-[22%]  max-[640px]:h-[100%]">
                     {
                         frame.map((element_lib)=>{
                             return(
@@ -69,7 +69,7 @@ const Skills =() =>{
                     }
                 </div>
                 <div className="h-[33%] w-full   flex flex-wrap flex-row gap-4 max-[640px]:flex max-[640px]:flex-row max-[640px]:gap-8 justify-center items-center
-                max-[640px]:h-[19%] max-[640px]:border border-green-700 border-solid max-[640px]:w-[2%] max-[640px]:h-[100%] max-[640px]:gap-0">
+                 max-[640px]:w-[20%] max-[640px]:h-[100%] max-[640px]:gap-0">
 
                     {
                         tools.map((element_tools,index1)=>{
