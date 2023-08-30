@@ -20,3 +20,9 @@
 .skills{
     grid-template-columns: repeat(3,minmax(200px,2fr));
 }
+@media (max-width:640px) {
+    .boxes{
+        grid-template-rows: 600px 900px 400px;
+    }
+    
+}

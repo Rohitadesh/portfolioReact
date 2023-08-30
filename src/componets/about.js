@@ -1,5 +1,6 @@
-import {web,tools,frame,skill_set} from "./webtech"
+
 import { useEffect } from "react";
+import Skills from "./skill";
 import AOS from "aos";
 const About =()=>{
     useEffect(()=>{
@@ -11,16 +12,18 @@ const About =()=>{
         AOS.refresh();
     },[])
     return(
-        <div className="h-[93%] w-full  overflow-auto  
+        <div className="h-[93%] w-full  overflow-y-auto  max-[640px]:w-[100%]  overflow-hidden
         grid boxes ">
-           <div className="h-full w-full  flex flex-wrap flex-row items-center justify-center gap-20  boxes ">
+           <div className="h-full w-full flex flex-wrap flex-row items-center justify-center gap-20 boxes 
+                flex flex-col flex-wrap justify-center items-center
+                pr-56">
                 <div className=" h-32 w-32 rounded-full shadow-2xl shadow-gray-500 
-                         flex flex-col items-center justify-center  max-[630px]:h-32  max-[630px]:w-32">
+                         flex flex-col items-center justify-center  max-[640px]:h-[20%] max-[640px]:w-[30%] ">
                         <h1 className="text-sm italic text-black">AboutMe</h1>
                 </div>
 
-                <div className="  h-[70%] w-[42%]  flex flex-wrap shadow-gray-500 flex-col justify-center items-center shadow-2xl rounded-3xl  
-                max-[630px]:h-[70%]  max-[630px]:w-[50%]  ">
+                <div className=" h-[70%] w-[42%]  flex flex-wrap shadow-gray-500 flex-col justify-center items-center shadow-2xl rounded-3xl  
+                 max-[640px]:w-[70%]  max-[640px]:h-[38%] ">
                         <p  className="p-6 text-base italic  max-[630px]:text-xs text-black"> 
                             "Hi i am Adesh S. N Welcome to My Website i am a <strong> Software Developer</strong> with foundation in HTML, CSS and JavaScript. Additionaly i  have learnt  MYSQL, Express JS .
                             I continuously seek opportunities to expand my skill set and apply my knowledge to achieve personal growth and contribute to organizational goals. Work experiences in Smart MedTech. 
@@ -30,97 +33,24 @@ const About =()=>{
                 </div>
 
            </div>
-           <div className="h-full  w-full grid skills">
-
-                <div className="h- w-full  flex flex-wrap flex-col justify-center items-center
-                    max-[600px]:">
-
-                    <div className="h-36 w-36  rounded-full shadow-gray-500
-                    flex flex-wrap flex-col justify-center items-center shadow-2xl">
-                        <h1 className="text-sm italic text-black">MySkills</h1>
-                    </div>
-
-                </div>
+           
+            <Skills />
 
 
-                <div className="h-full w-full 
-                flex flex-wrap flex-col justify-center items-center gap-28 max-[640px]:flex max-[640px]:gap-36  max-[640px]:h-[93%]">
-                    {
-                        skill_set.map((element,index)=>{
-
-                            return(
-                                <div key={index} className="h-28 w-28  rounded-full shadow-gray-500  
-                            flex flex-wrap flex-col  justify-center items-center shadow-2xl ">
-                                <h3 className="p-4 text-sm italic text-black">{element}</h3>
-                            </div> ) 
-                        })
-                    }
-
-                </div>
-
-
-                <div className="h-full w-full  flex flex-wrap flex-col justify-center items-center">
-
-                    <div className="h-[33%] w-full flex flex-wrap flex-row gap-4 justify-center items-center ">
-                    {
-                            web.map((web_element)=>{
-
-                                return(
-                                    <div className="h-20 w-20 rounded-full  shadow-gray-500 
-                                         shadow-2xl flex flex-wrap flex-col justify-center items-center ">
-                                        <h2 className="text-sm italic text-black">{web_element}</h2>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className="h-[34%] w-full    flex flex-wrap flex-col justify-center items-center gap-10">
-                        {
-                            frame.map((element_lib)=>{
-                                return(
-                                    <div className="h-20 w-20  rounded-full shadow-gray-500 
-                                        shadow-2xl flex flex-wrap flex-row justify-center items-center">
-                                        <h2 className="text-sm italic text-black">{element_lib}</h2>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className="h-[33%] w-full   flex flex-wrap flex-row gap-4 max-[640px]:flex max-[640px]:flex-row max-[640px]:gap-8 justify-center items-center
-                     max-[640px]:h-[19%]">
-
-                        {
-                            tools.map((element_tools,index1)=>{
-                                return(
-                                    <div key={index1} className="h-20 w-20  rounded-full  shadow-xl shadow-gray-500 max-[640px]:mb-
-                                       shadow-2xl flex flex-wrap flex-row justify-center items-center">
-                                        <h2 className="text-sm italic text-black">{element_tools}</h2>
-                                    </div>
-                                )
-                            })
-                        }
-
-                    </div>
-
-
-
-                </div>
-
-
-           </div>
-           <div className="h-[120%] w-full  grid skills">
+           <div className="h-[120%] w-full  grid skills ">
                 
-            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-8">
+            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-8 ">
                     <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl ">
                         <h1 className="text-sm italic text-black ">EXPERIENCE</h1>
                     </div>
 
-                    <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl mt   -12 ">
+                    <div className="h-28 w-28  rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl mt-12 
+                     ">
 
                         <h1 className="text-sm italic text-black">EDUCATION</h1>
                     </div>
             </div>
-            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-8">
+            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-8 ">
                     <div className="h-28 w-28 b rounded-full flex flex-wrap flex-col justify-center items-center shadow-gray-500 shadow-2xl">
                         <h1 className="text-sm italic text-black">2022-present</h1>
                     </div>
@@ -129,7 +59,8 @@ const About =()=>{
                         <h1 className="text-sm italic text-black">COLLEGE</h1>
                     </div>
             </div>
-            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-10">
+            <div className="h-full w-full  border-solid flex flex-wrap flex-col justify-center items-center gap-10
+            ">
 
                     <div className="h-24 w-36 rounded-2xl shadow-2xl flex flex-wrap flex-col justify-center items-center shadow-gray-500 "  >
                         <h1 className="text-sm italic p-1 text-black">Front-End Developer at SamarthMeditech Pvt Ltd</h1>
