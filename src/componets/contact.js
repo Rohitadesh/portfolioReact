@@ -25,7 +25,7 @@ const Contact= () =>{
                 <div className="h-[10%] w-[70%]  gap-1  rounded-md max-[640px]:h-[8%] max-[640px]:w-[78%] 
                 max-[600px]:flex-col    max-[640px]:items-center
                   border border-solid border-black flex flex-row  flex-wrap justify-center items-center ">
-                    <span > <FaRegEnvelope className=" mt-0.5 max-[640px]:text-md max-[640px]:ml-2  text-black" /></span><p className=" text-black text-sm  max-[630px]:text-xs max-[630px]:mr-6 text-black ">adeshnagalikar2000@gmail.com</p>
+                    <span > <FaRegEnvelope className=" mt-0.5 max-[640px]:text-md max-[640px]:ml-2  text-black" /></span><p className=" text-black text-xs  max-[630px]:text-xs max-[630px]:mr-6 text-black ">adeshnagalikar2000@gmail.com</p>
                 </div>
                
                 <div className="h-[10%] w-[63%] max-[640px]:h-[7%] max-[640px]:w-[78%] gap-1 rounded-md border border-solid border-black flex flex-col gap-2 flex-wrap justify-center content-start items-center4

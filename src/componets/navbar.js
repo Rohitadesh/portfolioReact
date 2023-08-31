@@ -10,11 +10,11 @@ const Navbar= ()=>{
         <> 
             <div className="h-[7%] w-full max-[630px]:h-[7%] overflow-hidden">
                     <div className='h-full w-full  max-[640px]:hidden flex flex-wrap flex- items-center justify-center '>
-                            <ul className='h-[80%]  w-[60%] flex flex-wrap flex-row justify-center items-center gap-24'>
+                            <ul className='h-[80%]  w-[60%] flex flex-wrap flex-row justify-center items-center gap-24 '>
                             {
                                 label.map((element,index)=>{
                                     return (
-                                        <li key={index} className='text-black '><Link to={element.path}>{element.place}</Link></li>
+                                        <li key={index} className='text-black text-sm'><Link to={element.path}>{element.place}</Link></li>
                                     )
                                 })
                             }
