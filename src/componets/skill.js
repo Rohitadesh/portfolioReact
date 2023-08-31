@@ -1,9 +1,8 @@
 import {web,tools,frame,skill_set} from "./webtech"
-
 const Skills =() =>{
-    
+
     return(
-        <div data-aos="fade-left" className="h-full  w-full grid skills flex flex-wrap flex-row  
+        <div  className="h-full  w-full grid skills flex flex-wrap flex-row  
          max-[640px]:flex max-[640px]:flex-wrap max-[640px]: flex-row " >
 
             <div  className="h-full w-full  flex flex-wrap flex-col items-center justify-center

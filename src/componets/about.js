@@ -12,7 +12,7 @@ const About =()=>{
         AOS.refresh();
     },[])
     return(
-        <div data-aos="fade-right"  className="h-[93%] w-full  overflow-y-auto  max-[640px]:w-[100%]  overflow-hidden
+        <div data-aos="fade-down"  className="h-[93%] w-full  overflow-y-auto  max-[640px]:w-[100%]  overflow-hidden
         grid boxes " >
         
            <div className="h-full w-full flex flex-wrap flex-row items-center justify-center gap-20 boxes 

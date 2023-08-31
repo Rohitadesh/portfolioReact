@@ -15,7 +15,7 @@ const Work =() =>{
         AOS.refresh();
     },[])
     return (
-        <main data-aos="fade-right" className=' h-[93%] w-full overflow-y-auto grid grid-cols-2 row_grid  
+        <main data-aos="fade-down" className=' h-[93%] w-full overflow-y-auto grid grid-cols-2 row_grid  
         max-[640px]:flex max-[640px]:flex-wrap flex-row '>
             <div className='h-full w-full  flex flex-wrap flex-col justify-center items-center 
             max-[640px]:flex max-[640px]:flex-col max-[640px]:flex-wrap max-[640px]:h-[60%] '>
