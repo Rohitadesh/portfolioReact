@@ -2,6 +2,7 @@ import game from "../componets/game.png"
 import joke from "../componets/joke.png"
 import client from "../componets/bio.png"
 import weather from "../componets/weather.png"
+import exam from "../componets/examapp.png"
 import {motion} from "framer-motion"
 import AOS from 'aos'
 import { useEffect } from "react"
@@ -78,7 +79,8 @@ const Work =() =>{
                 </motion.div>
 
             </div>
-            <div className='h-full w-full border  flex flex-wrap flex-col justify-center items-center max-[640px]:h-[50%] max-[640px]:w-[100%]'>
+
+            <div className='h-full w-full  flex flex-wrap flex-col justify-center items-center max-[640px]:h-[50%] max-[640px]:w-[100%]'>
                 <motion.div className="h-[90%] w-[80%] rounded-xl overflow-y-auto shadow-2xl "
                     whileHover={{ scale: 1.1}} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
                         <p className="text-2xl text-center  max-[640px]:text-md font-semibold">My Bio Backup</p>
@@ -90,6 +92,26 @@ const Work =() =>{
                         Of These Certificates The Project Will Be Hosted On Aws 
                         I Have Also Little Bit Knowledge About This In This Project I Have Been Be Worked On Backend Using Node Js And
                         Express Js And Mysql The Admin Side Of This Product Has Been Done By Be ..This Project Using Nunjucks Template, Tailwind Css , Html Javascript
+                        </p>
+
+                </motion.div>  
+            </div>
+
+            <div className='h-full w-full  flex flex-wrap flex-col justify-center items-center max-[640px]:h-[50%] max-[640px]:w-[100%]'>
+                <motion.div className="h-[90%] w-[80%]  rounded-xl shadow-2xl "
+                    whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                    <img src={exam} width={600} height={110} alt="game" className="h-full w-full rounded-xl" loading="lazy" />
+                </motion.div>
+
+            </div>
+            <div className='h-full w-full   flex flex-wrap flex-col justify-center items-center max-[640px]:h-[50%] max-[640px]:w-[100%]'>
+                <motion.div className="h-[90%] w-[80%] rounded-xl overflow-y-auto shadow-2xl "
+                    whileHover={{ scale: 1.1}} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
+                        <p className="text-2xl text-center  max-[640px]:text-md font-semibold">Quiz fullstack</p>
+                    <p className="text-md text-gray-500 text-left p-10 font-medium max-[620px]:text-md">
+                        This is my exam fullstack application.This Project is done  Backend Using 
+                        Express Js And Mysql and fontend using React, Tailwindcss.This is Based on Quiz exam 
+                        conducted by school and college 
                         </p>
 
                 </motion.div>  
