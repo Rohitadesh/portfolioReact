@@ -1,6 +1,6 @@
 
-import { useEffect } from "react";
 import Skills from "./skill";
+import { useEffect } from "react";
 import AOS from "aos";
 const About =()=>{
     useEffect(()=>{
@@ -12,13 +12,13 @@ const About =()=>{
         AOS.refresh();
     },[])
     return(
-        <div className="h-[93%] w-full  overflow-y-auto  max-[640px]:w-[100%]  overflow-hidden
-        grid boxes ">
+        <div data-aos="fade-right"  className="h-[93%] w-full  overflow-y-auto  max-[640px]:w-[100%]  overflow-hidden
+        grid boxes " >
         
            <div className="h-full w-full flex flex-wrap flex-row items-center justify-center gap-20 boxes 
                 flex flex-col flex-wrap justify-center items-center 
                 pr-18">
-                <div className=" h-32 w-32 rounded-full shadow-2xl shadow-gray-500 
+                <div  className=" h-32 w-32 rounded-full shadow-2xl shadow-gray-500 
                          flex flex-col items-center justify-center  max-[640px]:h-[90px] max-[640px]:w-[90px] ">
                         <h1 className="text-sm italic text-black">AboutMe</h1>
                 </div>

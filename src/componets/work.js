@@ -3,12 +3,19 @@ import joke from "../componets/joke.png"
 import client from "../componets/bio.png"
 import weather from "../componets/weather.png"
 import {motion} from "framer-motion"
-// import AOS from 'aos'
-// import { useEffect } from "react"
+import AOS from 'aos'
+import { useEffect } from "react"
 const Work =() =>{
-    // t scroll=useScroll()
+    useEffect(()=>{
+
+        console.log(AOS);
+        AOS.init({
+            duration:3000
+        });
+        AOS.refresh();
+    },[])
     return (
-        <main className=' h-[93%] w-full overflow-y-auto grid grid-cols-2 row_grid  
+        <main data-aos="fade-right" className=' h-[93%] w-full overflow-y-auto grid grid-cols-2 row_grid  
         max-[640px]:flex max-[640px]:flex-wrap flex-row '>
             <div className='h-full w-full  flex flex-wrap flex-col justify-center items-center 
             max-[640px]:flex max-[640px]:flex-col max-[640px]:flex-wrap max-[640px]:h-[60%] '>

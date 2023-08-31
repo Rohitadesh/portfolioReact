@@ -1,10 +1,12 @@
 import {web,tools,frame,skill_set} from "./webtech"
+
 const Skills =() =>{
+    
     return(
-        <div className="h-full  w-full grid skills flex flex-wrap flex-row  
+        <div data-aos="fade-left" className="h-full  w-full grid skills flex flex-wrap flex-row  
          max-[640px]:flex max-[640px]:flex-wrap max-[640px]: flex-row " >
 
-            <div className="h-full w-full  flex flex-wrap flex-col items-center justify-center
+            <div  className="h-full w-full  flex flex-wrap flex-col items-center justify-center
              
             max-[640px]:h-[22%]  max-[640px]:static  max-[640px]:flex max-[640px]:flex-wrap max-[640px]:flex-row
             max-[640px]:justify-center max-[640px]: items-center">
@@ -46,10 +48,10 @@ const Skills =() =>{
                  max-[640px]:w-[32%] max-[640px]:h-[100%]
                  ">
                 {
-                        web.map((web_element)=>{
+                        web.map((web_element,web_index)=>{
 
                             return(
-                                <div className="h-20 w-20 rounded-full  shadow-gray-500 
+                                <div key={web_index} className="h-20 w-20 rounded-full  shadow-gray-500 
                                     shadow-2xl flex flex-wrap flex-col justify-center items-center ">
                                     <h2 className="text-sm italic text-black">{web_element}</h2>
                                 </div>
@@ -60,9 +62,9 @@ const Skills =() =>{
                 <div className="h-[34%] w-full    flex flex-wrap flex-col justify-center items-center gap-10 
                  border-solid max-[640px]:w-[34%]  max-[640px]:h-[100%] ">
                     {
-                        frame.map((element_lib)=>{
+                        frame.map((element_lib,lib_index)=>{
                             return(
-                                <div className="h-20 w-20  rounded-full shadow-gray-500 
+                                <div  key={lib_index} className="h-20 w-20  rounded-full shadow-gray-500 
                                     shadow-2xl flex flex-wrap flex-row justify-center items-center">
                                     <h2 className="text-sm italic text-black">{element_lib}</h2>
                                 </div>

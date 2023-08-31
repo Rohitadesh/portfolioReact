@@ -14,7 +14,7 @@ const Home=()=>{
     AOS.refresh();
 },[])
     return(
-        <main className=' h-[93%] w-full max-[640px]:h-[93%]
+        <main data-aos="fade-right" className=' h-[93%] w-full max-[640px]:h-[93%]
         max-[640px]:flex max-[640px]:flex-col max-[640px]:flex-wrap max-[640px]:justify-center max-[640px]:items-center
       
       flex flex-col justify-center gap-10 items-center flex-wrap overflow-hidden'>

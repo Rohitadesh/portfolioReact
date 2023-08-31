@@ -2,11 +2,19 @@ import { FaRegEnvelope } from "@react-icons/all-files/fa/FaRegEnvelope";
 import{FaMapMarkerAlt} from "@react-icons/all-files/fa/FaMapMarkerAlt";
 import {FaMobileAlt} from "@react-icons/all-files/fa/FaMobileAlt";
 // import '@/images/contact.jpg'
-
+import { useEffect } from "react";
+import AOS from "aos";
 const Contact= () =>{
-    
+    useEffect(()=>{
+
+        console.log(AOS);
+        AOS.init({
+            duration:3000
+        });
+        AOS.refresh();
+    },[])
     return(
-       <div className="h-[92.8%] max-[600px]:h-[85%]  flex flex-col gap-2 flex-wrap justify-center items-center  ">
+       <div data-aos="fade-right" className="h-[92.8%] max-[600px]:h-[85%]  flex flex-col gap-2 flex-wrap justify-center items-center  ">
             {/* <div className="border border-solid bo0rder-black  h-[5%]"></div> */}
             <div className="shadow-xl max-[640px]:w-[78%]  max-[640px]:h-[50%] rounded-xl shadow-gray-500 border-pink-500 h-[75%] w-[35%] flex flex-wrap flex-col justify-center gap-12 items-center ">
 
