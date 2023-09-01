@@ -28,7 +28,7 @@ const Navbar= ()=>{
   
                          
                         <ul tabIndex={0} className=" menu p-2 shadow  opacity-100 rounded-box w-80 flex flex-row flex-wrap justify-start
-                            ml-3 border border-solid opacity-50">
+                            ml-3 border border-solid shadow-xl bg-gray-300 opacity-50">
                             {/* <l1><a>home</a></l1> */}
                             {
                                 label.map((element,index)=>{

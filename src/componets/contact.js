@@ -14,9 +14,9 @@ const Contact= () =>{
         AOS.refresh();
     },[])
     return(
-       <div data-aos="fade-down"  className="h-[92.8%] max-[600px]:h-[85%]  flex flex-col gap-2 flex-wrap justify-center items-center  ">
+       <div data-aos="fade-down"  className=" h-[92.8%] max-[600px]:h-[85%]  flex flex-col gap-2 flex-wrap justify-center items-center  ">
             {/* <div className="border border-solid bo0rder-black  h-[5%]"></div> */}
-            <div className="shadow-xl max-[640px]:w-[78%]  max-[640px]:h-[50%] rounded-xl shadow-gray-500 border-pink-500 h-[75%] w-[35%] flex flex-wrap flex-col justify-center gap-12 items-center ">
+            <div className="bg-gray-200 shadow-xl max-[640px]:w-[78%]  max-[640px]:h-[50%] rounded-xl shadow-gray-500 border-pink-500 h-[75%] w-[35%] flex flex-wrap flex-col justify-center gap-12 items-center ">
 
                 <div className="h-[10%] w-[70%] max-[430px]:h-[8%] max-[630px]:gap-2 max-[600px]:w-[78%] max-[630px]:flex max-[600px]:flex-row gap-1 flex flex-col flex-wrap justify-center items-center content-start -mt-6 rounded-md border border-solid border-black  ">
                     <span > <FaMobileAlt className="ml-1 max-[640px]:text-sm text-black" /></span><p className=" max-[630px]:mr-3  text-sm text-black ">+91-7259926393</p>

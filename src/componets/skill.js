@@ -10,8 +10,8 @@ const Skills =() =>{
             max-[640px]:h-[22%]  max-[640px]:static  max-[640px]:flex max-[640px]:flex-wrap max-[640px]:flex-row
             max-[640px]:justify-center max-[640px]: items-center">
 
-                    <div className="h-36 w-36  rounded-full shadow-gray-500
-                    flex flex-wrap flex-col justify-center items-center shadow-2xl 
+                    <div className="bg-gray-200 h-36 w-36  rounded-full shadow-lg hover:shadow-2xl
+                    flex flex-wrap flex-col justify-center items-center hover:-translate-y-[10px] duration-300
                     max-[640px]:h-[100px]  max-[640px]:w-[100px] max-[640px]: ">
                         <h1 className="text-sm italic text-black">MySkills</h1>
                     </div>
@@ -26,8 +26,8 @@ const Skills =() =>{
                     skill_set.map((element,index)=>{
 
                         return(
-                            <div key={index} className="h-28 w-28  rounded-full shadow-gray-500  
-                        flex flex-wrap flex-col  justify-center items-center shadow-2xl
+                            <div key={index} className="bg-gray-200 h-28 w-28  rounded-full shadow-xl hover:shadow-2xl 
+                        flex flex-wrap flex-col  justify-center items-center hover:-translate-y-[10px] duration-300
                         max-[640px]:h-[90px]  max-[640px]:w-[90px]
                          ">
                             <h3 className="p-4 text-sm italic text-black
@@ -50,8 +50,8 @@ const Skills =() =>{
                         web.map((web_element,web_index)=>{
 
                             return(
-                                <div key={web_index} className="h-20 w-20 rounded-full  shadow-gray-500 
-                                    shadow-2xl flex flex-wrap flex-col justify-center items-center ">
+                                <div key={web_index} className="bg-gray-200 h-20 w-20 rounded-full  shadow-xl hover:shadow-2xl
+                                    flex flex-wrap flex-col justify-center items-center hover:-translate-y-[10px] duration-300">
                                     <h2 className="text-sm italic text-black">{web_element}</h2>
                                 </div>
                             )
@@ -59,12 +59,12 @@ const Skills =() =>{
                     }
                 </div>
                 <div className="h-[34%] w-full    flex flex-wrap flex-col justify-center items-center gap-10 
-                 border-solid max-[640px]:w-[34%]  max-[640px]:h-[100%] ">
+                  max-[640px]:w-[34%]  max-[640px]:h-[100%] ">
                     {
                         frame.map((element_lib,lib_index)=>{
                             return(
-                                <div  key={lib_index} className="h-20 w-20  rounded-full shadow-gray-500 
-                                    shadow-2xl flex flex-wrap flex-row justify-center items-center">
+                                <div  key={lib_index} className="bg-gray-200 h-20 w-20  rounded-full shadow-xl hover:shadow-2xl
+                                    flex flex-wrap flex-row justify-center items-center hover:-translate-y-[10px] duration-300">
                                     <h2 className="text-sm italic text-black">{element_lib}</h2>
                                 </div>
                             )
@@ -77,8 +77,8 @@ const Skills =() =>{
                     {
                         tools.map((element_tools,index1)=>{
                             return(
-                                <div key={index1} className="h-20 w-20  rounded-full  shadow-xl shadow-gray-500 max-[640px]:mb-
-                                shadow-2xl flex flex-wrap flex-row justify-center items-center">
+                                <div key={index1} className="bg-gray-200 h-20 w-20  rounded-full  shadow-lg hover:shadow-2xl max-[640px]:mb-
+                                shadow-2xl flex flex-wrap flex-row justify-center items-center hover:-translate-y-[10px] duration-300">
                                     <h2 className="text-sm italic text-black">{element_tools}</h2>
                                 </div>
                             )

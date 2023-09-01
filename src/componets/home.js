@@ -40,9 +40,9 @@ const Home=()=>{
       </motion.div>
             
         
-            <div className='border  h-[70%] w-[40%] flex flex-col max-[640px]:h-[40%] max-[640px]:w-[80%]
+            <div className='  h-[70%] w-[40%] flex flex-col max-[640px]:h-[40%] max-[640px]:w-[80%]
             flex-wrap justify-end rounded-full'>
-            <div className="h-[90%] w-full rounded-2xl shadow-xl flex flex-col justify-center align-cent">
+            <div className="bg-gray-200 h-[90%] w-full rounded-2xl shadow-xl flex flex-col justify-center align-cent">
                 
                 <h1 className="text-md text-gray-500 text-left p-14 font-medium text-2xl max-[640px]:text-sm"><strong >
                     I AM ADESHKUMAR S N 
