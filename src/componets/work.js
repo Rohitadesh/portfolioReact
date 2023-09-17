@@ -109,9 +109,9 @@ const Work =() =>{
                     whileHover={{ scale: 1.1}} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
                         <p className="text-2xl text-center  max-[640px]:text-md font-semibold">Quiz fullstack</p>
                     <p className="text-md text-gray-500 text-left p-10 font-medium max-[620px]:text-md">
-                        This is my exam fullstack application.This Project is done  Backend Using 
+                        This is my exam fullstack application.This Project is 
                         Express Js And Mysql and fontend using React, Tailwindcss.This is Based on Quiz exam 
-                        conducted by school and college 
+                        conducted by school and college .This project work  is ongoing Now .
                         </p>
 
                 </motion.div>  
