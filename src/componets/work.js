@@ -111,7 +111,7 @@ const Work =() =>{
                     <p className="text-md text-gray-500 text-left p-10 font-medium max-[620px]:text-md">
                         This is my exam fullstack application.This Project is 
                         Express Js And Mysql and fontend using React, Tailwindcss.This is Based on Quiz exam 
-                        conducted by school and college .This project work  is ongoing Now .
+                        conducted by school and college .This project work  is on going Now .
                         </p>
 
                 </motion.div>  
